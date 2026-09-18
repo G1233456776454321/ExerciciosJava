@@ -21,8 +21,21 @@
   - exemplos: (double) quilometros / litros 
     ou quilometros / (double) litros
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_6 {
     public static void main(String[] args) {
+        int kms;
+        int litros;
+        Scanner leitor = new Scanner(System.in);
+        System.out.print("Informe os kms a andar: ");
+        kms = leitor.nextInt();
+        System.out.print("informe os litros: ");
+        litros = leitor.nextInt();
+        double calculo =  kms /(double) litros;
+        System.out.printf("O resultado de gastos por kms andados é: " + calculo);
+
+
+
 
     }
 }

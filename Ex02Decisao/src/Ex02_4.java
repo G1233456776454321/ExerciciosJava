@@ -25,7 +25,23 @@
     - depois de terminar, conceda desconto de 10% para pessoas 
       com mais de 60 anos (mas não acumula se for estudante)
 -------------------------------------------------------------------*/
+import java.util.Scanner;
+
 public class Ex02_4 {
     public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        String estudante;
+        int idade = 0;
+        System.out.printf("é estudante?");
+        estudante = leitor.next();
+        if (estudante.equalsIgnoreCase("s")){
+            System.out.printf("desconto de meia entrada aplicado");
+        } else if (idade<18) {
+            System.out.printf("desconto de meia entrada aplicado");
+
+        } else {
+            System.out.printf("desconto de meia entrada não aplicado");
+        }
+
     }
 }

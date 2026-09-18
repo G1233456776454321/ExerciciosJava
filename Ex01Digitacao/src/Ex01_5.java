@@ -15,9 +15,28 @@
     incluindo os centavos
   - calcule e imprima também quantas moedas de 50, 25, 10, 5 e 1 centavo
     podem ser obtidas
--------------------------------------------------------------------*/
+-------------------------------------------------------------------*/import java.util.Scanner;
+
+import java.util.Scanner;
+
 public class Ex01_5 {
     public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
 
+        System.out.print("Informe o valor do troco: ");
+        int trocar = leitor.nextInt();
+
+        int cinquenta = trocar / 50;
+        int resto50 = trocar % 50;
+
+        int dez = resto50 / 10;
+        int resto10 = resto50 % 10;
+
+        int cinco = resto10 / 5;
+        int um = resto10 % 5;
+
+        int total = cinquenta + dez + cinco + um;
+
+        System.out.printf("O total de cédulas/moedas deu %d\n", total);
     }
 }

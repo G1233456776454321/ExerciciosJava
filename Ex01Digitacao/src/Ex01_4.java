@@ -10,8 +10,16 @@
   - calcule e imprima quantos ovos sobram
   - use a operação de divisão inteira (/) e resto da divisão (%)
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_4 {
     public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        System.out.print("Informe a quantidade de ovos do dia: ");
+         int ovosdia = leitor.nextInt();
+         int caixas = ovosdia/12;
+         int resto = ovosdia%12;
+        System.out.printf("Foram carregadas %d caixas, e sobraram %d ovos", caixas, resto);
+
 
     }
 }
