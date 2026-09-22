@@ -31,7 +31,36 @@
   - isósceles: apenas dois lados são iguais
   - escaleno: os três lados são diferentes
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex02_5 {
     public static void main(String[] args) {
+        double l1;
+        double l2;
+        double l3;
+        Scanner leitor = new Scanner(System.in);
+        System.out.print("digite seu l1: ");
+        l1 = leitor.nextDouble();
+        System.out.print("digite seu l2: ");
+        l2 = leitor.nextDouble();
+        System.out.print("digite seu l3: ");
+        l3 = leitor.nextDouble();
+
+        if (l1 !=0 && l2 !=0 && l3 !=0){
+            if (l1 + l2> l3){
+                System.out.print("è um triangulo");
+            }
+            else if (l2 + l3> l1){
+                System.out.print("è um triangulo");
+            }
+            else if (l1 + l3> l2){
+                System.out.print("è um triangulo");
+            }
+            else{
+                System.out.print("è um triangulo");
+            }
+        }
+        else{
+            System.out.print("Digite numeros válidos");
+        }
     }
 }
