@@ -24,7 +24,7 @@ public class Ex02_1 {
                 Scanner leitor = new Scanner(System.in);
                 System.out.printf("Informe o valor total da compra: ");
                 valor = leitor.nextDouble();
-                calculo = Math.round(valor/100.0);
+                calculo = Math.ceil(valor/100.0);
                 System.out.print(calculo + "raspadinhas ganhas");
 
 
