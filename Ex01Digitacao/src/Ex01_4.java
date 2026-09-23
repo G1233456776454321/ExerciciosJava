@@ -17,7 +17,7 @@ public class Ex01_4 {
         System.out.print("Informe a quantidade de ovos do dia: ");
          int ovosdia = leitor.nextInt();
          int caixas = ovosdia/12;
-         int resto = ovosdia%12;
+         int resto = ovosdia%12; //ou ovos - (caixas*12)
         System.out.printf("Foram carregadas %d caixas, e sobraram %d ovos", caixas, resto);
 
 
